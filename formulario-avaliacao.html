@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquisição de Talentos na TAG</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo da TAG" width="320" height="205" />
+        
+        <h1>Aquisição de Talentos na TAG</h1>
+   
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="abertura.html">Abertura</a>
+            <a href="alinhamento.html">Alinhamento</a>
+            <a href="avaliacao.html">Avaliação</a>
+            <a href="fechamento.html">Fechamento</a>
+            <a href="acompanhamento.html">Acompanhamento</a>
+            <a href="ferramentas.html">Ferramentas</a>
+
+    </nav>
+    </div>
+</header>
+
+<section>
+
+    <p>Oi, tagger!</p>
+
+    <p>Este formulário tem como objetivo centralizar os feedbacks sobre as pessoas avaliadas nos processos seletivos da TAG.</p>
+
+    <p>Se você avaliou o teste técnico de alguma pessoa candidata ou participou de alguma entrevista, você deverá deixar suas impressões registradas aqui. Dessa forma, mantemos o histórico da pessoa conosco para caso ela seja cogitada em outro processo.</p>
+
+    <p>Qualquer dúvida, ficamos à disposição ☺</p>
+
+    <p>Beijos,</p>
+
+    <p>Equipe de R&S</p>
+
+    <aside>
+        <form method="post" onsubmit="return validaForm()">
+            <input type="text" name="entrevistade" placeholder="Qual é o nome da pessoa entrevistada?" id="entrevistade">
+            <input type="date" name="data-entrevista" placeholder="Quando a entrevista foi realizada?" id="data-entrevista">
+            <input type="area" name="area" placeholder="Qual a área da vaga?" maxlength="120" id="area">
+
+            <h4>Quanto à aderência a cada um dos valores, como você avalia o candidato selecionado?</h4>
+            <p>Esporte coletivo</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <p>Metamorfose</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <p>VMDL</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <p>Qual é a tua obra?</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <p>Protagonismo</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <p>Sarrafo alto</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <p>Só podia ser a TAG</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <p>Alegria, alegria</p>
+            <select name="select">
+                <option value="nao-aderente">Não terá aderência</option> 
+                <option value="precisa-evoluir" selected>Precisará evoluir</option>
+                <option value="aderente">Será aderente</option>
+                <option value="elevar-sarrafo">Pode elevar o sarrafo</option>
+            </select>
+
+            <h4>Em que você acredita que o perfil da pessoa entrevistada mais pode agregar ao time? Quais seriam suas forças?</h4>
+            <input type="forcas" name="forcas" id="forcas">
+
+            <h4>O que preocupa em relação ao perfil da pessoa entrevistada? Quais seriam os aspectos de cultura aos quais ela poderia não se adaptar? Quais seriam suas fraquezas?</h4>
+            <input type="fraquezas" name="fraquezas" id="fraquezas">
+
+            <h4>Em qual nível você avalia que a pessoa entrevistada se encaixa?</h4>
+            <select name="select">
+                <option value="estag">Estágio</option> 
+                <option value="assistente" selected>Assistente ou Pessoa Desenvolvedora Trainee</option>
+                <option value="junior">Analista ou Pessoa Desenvolvedora Júnior</option>
+                <option value="pleno">Analista ou Pessoa Desenvolvedora Pleno</option>
+                <option value="senior">Analista ou Pessoa Desenvolvedora Sênior</option>
+                <option value="especialista">Especialista</option>
+                <option value="coordenacao">Coordenação ou liderança técnica</option>
+                <option value="gerencia">Gerência</option>
+            </select>
+
+            <h4>Você indica a contratação dessa pessoa?</h4>
+            <select name="select">
+                <option value="sim">Sim</option> 
+                <option value="sim-outra">Sim, mas não para esta vaga</option>
+                <option value="nao">Não</option>
+            </select>
+
+
+            <button type="submit">Enviar avaliação</button>
+
+            <div id="erro"></div>
+        </form>
+
+    </aside>
+
+    <!-- essa div serve apenas para corrigir o problema com o float dos filhos -->
+    <div class="clear"> </div>
+
+</section>
+
+<script src="js.contato.js"></script>
+
+</body>
+</html>
