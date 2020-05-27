@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquisição de Talentos na TAG</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/formulario.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo da TAG" width="320" height="205" />
+
+        <h1>Aquisição de Talentos na TAG</h1>
+       
+        <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="abertura.html">Abertura</a>
+                <a href="alinhamento.html">Alinhamento</a>
+                <a href="avaliacao.html">Avaliação</a>
+                <a href="fechamento.html">Fechamento</a>
+                <a href="acompanhamento.html">Acompanhamento</a>
+                <a href="ferramentas.html">Ferramentas</a>
+
+        </nav>
+    </div>
+</header>  
+
+<section>
+
+    <p>Olá, querida liderança! </p>
+
+    <p>Este formulário tem como objetivo centralizar o processo de abertura de vagas na TAG.</p>
+        
+    <p>Caso tenha dúvidas sobre como escrever a descrição da sua área ou vaga, os requisitos ou outros pontos deste formulário, dê uma olhada no arquivo de templates que está <a href="https://docs.google.com/document/d/1kya2EmUhxHxF-gybm478aHTKiycHE4DOgFrwkMJ8O7o/edit?usp=sharing">aqui</a></p>
+        
+    <p>Ao final do preenchimento, lembre-se de agendar a conversa de alinhamento com a Carol (30 minutos são suficientes ☺). A vaga só será divulgada depois deste alinhamento.</p>
+        
+    <p>Qualquer dúvida, ficamos à disposição!</p>
+        
+    <p>Beijos</p>
+
+    <aside>
+
+        <form method="post" onsubmit="return validaForm()">
+
+            <select name="select">          
+                <option value="design">Design</option>
+                <option value="financeiro">Financeiro</option>
+                <option value="gc">Gestão de Clientes</option>
+                <option value="relacionamento">Gestão de Clientes - Relacionamento</option>
+                <option value="infra">Infraestrutura</option>
+                <option value="mkt">Marketing</option>
+                <option value="operacoes">Operações</option>
+                <option value="produto">Produto</option>
+                <option value="rh">RH</option> 
+                <option value="ti">TI</option>
+            </select>
+
+            <input type="text" name="nivel" placeholder="Informe o nível da vaga" id="nivel">
+            <input type="text" name="cargo-divulgado" placeholder="Informe o cargo a ser divulgado" id="cargo-divulgado">
+            <textarea name="descricao-area" placeholder="Breve descrição da área" id="descricao-area"></textarea>
+            <input type="text" name="descricao-vaga" placeholder="Breve descrição da vaga" id="descricao-vaga">
+            <input type="text" name="atividades" placeholder="Atividades" id="atividades">
+            <input type="text" name="requisitos" placeholder="Requisitos" id="requisitos">
+            <input type="text" name="entrevistadores" placeholder="Quem vai entrevistar os candidatos?" id="entrevistadores">
+            <input type="text" name="testes" placeholder="Haverá testes técnicos?" id="testes">
+
+            <button type="submit">Enviar solicitação</button>
+
+            <div id="erro"></div>
+        </form>
+
+    </aside>
+
+    <!-- essa div serve apenas para corrigir o problema com o float dos filhos -->
+    <div class="clear"> </div>
+
+</section>
+
+<script src="js.contato.js"></script>
+
+</body>
+</html>
