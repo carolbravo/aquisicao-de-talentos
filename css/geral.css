@@ -1,0 +1,96 @@
+/* geral.css */
+
+/* cria definição de fonte customizada */
+
+body {
+     font-family: helvetica;
+     font-size: normal;
+     font-weight: normal;
+     margin-left: 100px;
+     margin-right: 100px;
+}
+
+header {
+    /* border: 3px solid black; */
+    background: rgb(255, 255, 255);
+    min-height: 80px;
+}
+
+section {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.container {
+    width: 996px;
+    /* border: 1px solid white; */
+    margin: 0 auto; /* centraliza o elemento */
+}
+
+.container h1 {
+    color: rgb(2, 2, 68);
+    text-transform: uppercase;
+    font-size: 44px;
+    margin: 43px 0 0 20px;
+    font-family: helvetica;
+    text-align: center;
+    float: left;
+}
+
+.container h4 {
+    color:black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: helvetica;
+    text-align: left;
+}
+
+.container img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+/* MENU */
+
+.menu {
+    clear: both;  /* serve como um corte para os floats */
+}
+
+.menu a {
+    color: rgb(2, 2, 68);
+    padding: 4px;
+    width: 130px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    display: inline-block;
+    text-align: center;
+    transition: background 1s;
+}
+
+.menu a:first-child {
+    border-bottom: 3px solid rgb(2, 2, 68);
+}
+
+.menu a:first-child:hover {
+    background: rgb(255, 249, 162);
+}
+
+.menu a:nth-child(n+2):nth-child(-n+6) {
+    border-bottom: 3px solid rgb(2, 2, 68);
+}
+
+.menu a:nth-child(n+2):nth-child(-n+6):hover {
+    background: rgb(255, 249, 162);
+}
+
+.menu a:last-child {
+    border-bottom: 3px solid rgb(2, 2, 68);
+}
+
+.menu a:last-child:hover {
+    background: rgb(255, 249, 162);
+}
